@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create: Industrial Skies</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+
+        :root {
+            --blue: #0ea5e9;
+            --light-blue: #38bdf8;
+            --stone: #334155;
+            --stone-light: #475569;
+            --white: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lexend', sans-serif;
+            background: linear-gradient(180deg, #0f172a 0%, #1e2937 100%);
+            color: var(--white);
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(15, 23, 42, 0.97);
+            border-bottom: 4px solid var(--blue);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            padding: 1.2rem 0;
+        }
+
+        .nav {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 2.1rem;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: -1px;
+        }
+
+        .logo span {
+            color: var(--blue);
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 2.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--blue);
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.85)), 
+                        url('https://images.unsplash.com/photo-1585208798174-6cedd78e0198?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 4.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--white);
+            letter-spacing: -2px;
+        }
+
+        .ip-box {
+            background: rgba(30, 41, 59, 0.95);
+            border: 3px solid var(--blue);
+            padding: 1.4rem 3.5rem;
+            border-radius: 12px;
+            display: inline-block;
+            margin: 2rem 0;
+            font-size: 1.85rem;
+            font-weight: 600;
+            letter-spacing: 4px;
+            color: var(--white);
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--blue);
+            color: white;
+            padding: 16px 40px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            margin: 0 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(14, 165, 233, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 3px solid var(--blue);
+        }
+
+        .section {
+            padding: 100px 0;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .players {
+            background: rgba(30, 41, 59, 0.95);
+            border: 3px solid var(--stone-light);
+            border-radius: 16px;
+            padding: 3.5rem;
+            text-align: center;
+        }
+
+        .player-count {
+            font-size: 4.8rem;
+            font-weight: 700;
+            color: var(--blue);
+            margin: 1rem 0;
+        }
+
+        .status {
+            display: inline-block;
+            background: #22c55e;
+            color: #111;
+            padding: 8px 22px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .discord-section {
+            display: flex;
+            gap: 4rem;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .discord-widget {
+            background: #1e2937;
+            padding: 1.5rem;
+            border-radius: 16px;
+            border: 3px solid var(--blue);
+        }
+
+        h2 {
+            font-size: 3rem;
+            color: var(--white);
+            margin-bottom: 2.5rem;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        footer {
+            background: #0f172a;
+            text-align: center;
+            padding: 3rem 0;
+            border-top: 3px solid var(--stone-light);
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo">CREATE <span>INDUSTRIAL SKIES</span></div>
+            <div class="nav-links">
+                <a href="#players">Players</a>
+                <a href="#discord">Discord</a>
+                <a href="#">Wiki</a>
+                <a href="#">Rules</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>INDUSTRIAL SKIES</h1>
+            
+            <div class="ip-box">
+                 industrialskies.mineserver.uno
+            </div>
+            
+            <div style="margin-top: 2rem;">
+                <a href="#" class="btn">JOIN SERVER</a>
+                <a href="#discord" class="btn btn-secondary">JOIN DISCORD</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="players" style="background: #f8fafc; color: #0f172a;">
+        <h2 style="color: #1e2937;">PLAYERS ONLINE</h2>
+        
+        <div class="players">
+            <div class="status">● ONLINE</div>
+            <div id="player-count" class="player-count">0/80</div>
+            
+            <div id="player-list" style="margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; max-width: 800px; margin-left: auto; margin-right: auto;"></div>
+        </div>
+    </section>
+
+    <section class="section" id="discord">
+        <h2>DISCORD</h2>
+        <div class="discord-section">
+            <div style="flex: 1; min-width: 300px;">
+                <h3 style="color: var(--blue); margin-bottom: 1.2rem;">Community</h3>
+                <p style="font-size: 1.15rem;">
+                    Connect with other players, get technical support, and share your builds.
+                </p>
+            </div>
+            
+            <div class="discord-widget">
+                <iframe 
+                    src="https://discord.com/widget?id=1506433862790811800&theme=dark" 
+                    width="350" 
+                    height="500" 
+                    allowtransparency="true" 
+                    frameborder="0" 
+                    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Create: Industrial Skies</p>
+    </footer>
+
+    <script>
+        // CHANGE TO YOUR ACTUAL SERVER IP OR DOMAIN
+        const SERVER_IP = "play.industrialskies.gg";
+
+        async function fetchServerStatus() {
+            try {
+                const response = await fetch(`https://api.mcsrvstat.us/2/${SERVER_IP}`);
+                const data = await response.json();
+
+                const countEl = document.getElementById('player-count');
+                
+                if (data.online) {
+                    countEl.textContent = `${data.players.online}/${data.players.max}`;
+                    
+                    const listEl = document.getElementById('player-list');
+                    listEl.innerHTML = '';
+                    
+                    if (data.players && data.players.list && data.players.list.length > 0) {
+                        data.players.list.forEach(player => {
+                            const div = document.createElement('div');
+                            div.style.cssText = `
+                                background: #1e2937; 
+                                color: #bae6fd; 
+                                padding: 10px 20px; 
+                                border-radius: 9999px; 
+                                font-size: 1.05rem;
+                                border: 1px solid #0ea5e9;
+                            `;
+                            div.textContent = player;
+                            listEl.appendChild(div);
+                        });
+                    } else {
+                        const empty = document.createElement('p');
+                        empty.textContent = "No players online";
+                        empty.style.opacity = "0.7";
+                        listEl.appendChild(empty);
+                    }
+                } else {
+                    countEl.textContent = "OFFLINE";
+                    countEl.style.color = "#ef4444";
+                }
+            } catch (e) {
+                document.getElementById('player-count').textContent = "—";
+            }
+        }
+
+        fetchServerStatus();
+        setInterval(fetchServerStatus, 30000);
+    </script>
+</body>
+</html>
