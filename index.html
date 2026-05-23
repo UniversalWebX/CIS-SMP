@@ -116,6 +116,20 @@
             box-shadow: 0 14px 28px rgba(14, 165, 233, 0.35);
         }
 
+        .discord-section {
+            padding: 100px 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .discord-widget {
+            background: #1e2937;
+            padding: 1rem;
+            border-radius: 18px;
+            border: 3px solid var(--blue);
+            box-shadow: 0 0 30px rgba(14, 165, 233, 0.15);
+        }
+
         footer {
             background: #0f172a;
             text-align: center;
@@ -138,6 +152,11 @@
             .btn {
                 width: 100%;
                 max-width: 300px;
+            }
+
+            .discord-widget iframe {
+                width: 100%;
+                max-width: 350px;
             }
         }
     </style>
@@ -167,9 +186,22 @@
 
             <br />
 
-            <a href="#" class="btn">
-                JOIN SERVER
+            <a href="#discord" class="btn">
+                JOIN DISCORD
             </a>
+        </div>
+    </section>
+
+    <section class="discord-section" id="discord">
+        <div class="discord-widget">
+            <iframe
+                src="https://discord.com/widget?id=1506433862790811800&theme=dark"
+                width="350"
+                height="500"
+                allowtransparency="true"
+                frameborder="0"
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+            </iframe>
         </div>
     </section>
 
