@@ -6,6 +6,22 @@
   <title>Create Industries SMP</title>
   <meta name="description" content="Create Industries SMP — Season 2 Minecraft server.">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Gradient borders applied to key sections and cards */
+    .hero-card,
+    .cards article,
+    .join {
+      border: 2px solid transparent;
+      border-image: linear-gradient(135deg, #ff8c00, #e52e71, #ff8c00) 1;
+      border-radius: 12px; /* Ensure your CSS container handles clipping if using rounded corners */
+    }
+
+    /* Optional subtle gradient border for buttons */
+    .button.secondary {
+      border: 2px solid transparent;
+      border-image: linear-gradient(135deg, #ff8c00, #e52e71) 1;
+    }
+  </style>
 </head>
 <body>
   <header class="nav">
@@ -32,7 +48,7 @@
         </div>
       </div>
       <div class="hero-card">
-        <div class="gear"><img src="logo.png" alt="Create Industries gear logo" style="width: 100%; height: 100%; object-fit: contain;"></div>
+        <div class="gear">⚙</div>
         <strong>Create Industries</strong>
         <small>SMP • Season 2</small>
       </div>
@@ -47,11 +63,7 @@
     </section>
 
     <section class="cards">
-      <article>
-        <span><img src="logo.png" alt="Create logo icon" style="width: 100%; height: 100%; object-fit: contain;"></span>
-        <h3>Create-focused</h3>
-        <p>Machines, automation and engineering.</p>
-      </article>
+      <article><span>⚙</span><h3>Create-focused</h3><p>Machines, automation and engineering.</p></article>
       <article><span>🏭</span><h3>Industry</h3><p>Build factories and production lines.</p></article>
       <article><span>👥</span><h3>SMP</h3><p>Play, trade and build with others.</p></article>
     </section>
@@ -60,4 +72,16 @@
       <p class="eyebrow">READY?</p>
       <h2>Join Create Industries SMP</h2>
       <p>Download the pack, join the Discord, and get building.</p>
-      <div class="buttons
+      <div class="buttons">
+        <a class="button primary" href="https://discord.gg/kHKghGCg8j" target="_blank" rel="noopener">Discord</a>
+        <a class="button secondary" href="https://www.curseforge.com/minecraft/modpacks/create-industries-smp-s2" target="_blank" rel="noopener">CurseForge</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Create Industries SMP</span>
+    <span>Season 2</span>
+  </footer>
+</body>
+</html>
